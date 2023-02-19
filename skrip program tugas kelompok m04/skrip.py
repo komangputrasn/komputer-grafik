@@ -31,8 +31,8 @@ def buat_titik(y, x, pd, pr, pg, pb, latar):
     pic = latar
     r = int(pd / 2)
 
-    for i in range(y - r, y + r + 1):
-        for j in range(x - r, x + r + 1):
+    for i in range(x - r, x + r + 1):
+        for j in range(y - r, y + r + 1):
             if ((i - x) ** 2 + (j - y) ** 2) <= (r ** 2):
                 pic[i, j, 0] = pr
                 pic[i, j, 1] = pg
